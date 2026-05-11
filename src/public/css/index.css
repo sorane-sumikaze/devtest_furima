@@ -1,0 +1,78 @@
+/* ===== Tabs ===== */
+.tabs {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 24px;
+}
+
+.tabs__item {
+    padding: 16px 24px;
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -1px;
+}
+
+.tabs__item--active {
+    border-bottom-color: #ff6b35;
+    font-weight: bold;
+    color: #111;
+}
+
+/* ===== Items Grid ===== */
+.items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    padding: 24px 0;
+}
+
+.item-card {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.item-card__image {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.item-card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item-card__image-placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: #e0e0e0;
+}
+
+.item-card__sold-badge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: 2px;
+}
+
+.item-card__name {
+    font-size: 14px;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
