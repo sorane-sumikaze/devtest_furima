@@ -1,5 +1,8 @@
 ![CI](https://github.com/sorane-sumikaze/devtest_furima/actions/workflows/ci.yml/badge.svg?branch=main)
 
+### （採点者の方へ）
+GitHub IDをhalpha1503->sorane-sumikazeに変更しております（紛らわしく申し訳ございません、なりすまし等ではないので何卒ご容赦ください）
+
 # coachtech_furima
 
 ## このアプリについて
@@ -36,8 +39,8 @@
 ### 1. リポジトリのクローンと Docker ビルド
 
 ```shell
-git clone https://github.com/halpha1503/coachtech_furima
-cd coachtech_furima
+git clone https://github.com/sorane-sumikaze/devtest_furima
+cd devtest_furima
 docker-compose up -d --build
 cp src/.env.example src/.env
 ```
@@ -91,26 +94,3 @@ php artisan storage:link
 <img src=erd.drawio.png>
 
 ---
-
-## ディレクトリ構成
-
-<!-- 主要なディレクトリのみ記載する。全ファイルの列挙は不要 -->
-
-```
-{{ 例:
-src/
-├── app/
-│   ├── Http/
-│   │   ├── Controllers/
-│   │   └── Requests/
-│   ├── Models/
-│   └── Services/
-├── resources/
-│   ├── views/
-│   └── css/
-└── database/
-    ├── migrations/
-    ├── factories/
-    └── seeders/
-}}
-```
